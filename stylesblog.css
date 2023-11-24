@@ -313,20 +313,13 @@ body {
   }
 }
 
-/* Estilo para el aside */
 #sidebar {
   background: rgba(0, 0, 0, 0.5);
-  /* Fondo semi-transparente */
   color: white;
-  /* Color del texto */
   padding: 20px;
-  /* Espaciado interno */
   margin: 20px 0;
-  /* Margen vertical */
   border-radius: 10px;
-  /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* Sombra */
 }
 
 #sidebar h3 {
@@ -339,22 +332,17 @@ body {
 
 #sidebar ul {
   list-style: none;
-  /* Quitar estilos de lista */
   padding: 0;
 }
 
 #sidebar ul li {
   margin-bottom: 10px;
-  /* Espaciado entre elementos de la lista */
 }
 
 #sidebar ul li a {
   color: #37bcf9;
-  /* Color de los enlaces */
   text-decoration: none;
-  /* Quitar subrayado */
   transition: color 0.3s;
-  /* Transición suave al cambiar de color */
 }
 
 #sidebar ul li a:hover {
@@ -362,7 +350,6 @@ body {
   /* Cambiar color al pasar el ratón */
 }
 
-/* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {
   #sidebar {
     margin: 20px;
@@ -463,12 +450,6 @@ footer {
   padding: 50px 0px;
   background-image: url(./image/background-footer.svg);
   background-size: cover;
-
-  /*background-color: #d0f0f8;
-  -webkit-mask-image: url("../Images/background-footer.svg");
-  mask-image: url("../Images/background-footer.svg");
-  -webkit-mask-size: cover;
-  mask-size: cover;*/
 }
 
 .container__footer {
@@ -516,4 +497,102 @@ footer {
 
 .box__footer p .fab {
   font-size: 20px;
+}
+
+/*Version movil pantallas pequeñas*/
+/*Version movil pantallas pequeñas*/
+/*Version movil pantallas pequeñas*/
+/*Version movil pantallas pequeñas*/
+/*Version movil pantallas pequeñas*/
+
+@media (max-width: 768px) {
+  .container-cabra {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .anchura-aside,
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  #sidebar {
+    margin-bottom: 20px;
+  }
+
+  .container .box-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #logo {
+    width: 150px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #logo h3 {
+    font-size: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .anchura-aside,
+  #sidebar {
+    width: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    width: auto;
+    margin: 10px;
+    height: auto;
+    border-width: 5px;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box__footer {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .box__footer .logo img {
+    width: 150px;
+  }
+
+  .box__footer .terms {
+    font-size: 16px;
+  }
 }
