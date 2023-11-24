@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Blog</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./stylesblog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 
 <body>
   <!-- Cabecera -->
@@ -25,56 +28,120 @@
         </ul>
       </nav>
     </div>
-
   </header>
 
-  <!-- Contenido Principal -->
-  <main class="wrap">
-    <!-- Banner -->
+  <main>
     <div id="banner">
-      <h1>¡Bienvenido a Mi Blog!</h1>
+      <h1>Diseño de CSS por Victor-g</h1>
     </div>
 
-    <!-- Tarjetas de Categorías -->
-    <div id="cards">
-      <!-- Repite esta estructura para más tarjetas -->
-      <div class="card">
-        <p class="icon">H</p>
-        <h2 class="category">Categoría 1</h2>
-        <p class="description">Descripción breve de la categoría.</p>
+    <div class="container-cabra">
+      <div class="anchura-aside">
+        <aside id="sidebar">
+          <h3>Enlaces Relacionados</h3>
+          <ul>
+            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            <li><a href="https://midu.dev/" target="_blank">Midudev</a></li>
+            <li><a href="https://www.freecodecamp.org/news/tag/lua/" target="_blank">Lua freecodecamp</a></li>
+            <img src="./image/aside-img.jpeg" alt="" width="500">
+          </ul>
+        </aside>
+      </div>
+
+      <div class="container">
+
+        <h1 class="heading mt-2">Tecnologias de la que hablaremos en este blog</h1>
+
+        <div class="box-container">
+
+          <div class="box">
+            <img src="image/icon-1.png" alt="">
+            <h3>HTML 5</h3>
+            <p>HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace
+              referencia al
+              lenguaje de marcado para la elaboración de páginas web.</p>
+            <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" class="btn">read more</a>
+          </div>
+
+          <div class="box">
+            <img src="image/icon-2.png" alt="">
+            <h3>CSS 3</h3>
+            <p>CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un
+              lenguaje
+              de
+              diseño gráfico. HTML Y CSS son una perfecta combinacion para trabajar juntos</p>
+            <a href="https://es.wikipedia.org/wiki/CSS" target="_blank" class="btn">read more</a>
+          </div>
+
+          <div class="box">
+            <img src="image/icon-3.png" alt="">
+            <h3>JavaScript</h3>
+            <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar
+              ECMAScript. Se define como orientado a objetos,2​ basado en prototipos, imperativo, débilmente tipado y
+              dinámico.</p>
+            <a href="https://es.wikipedia.org/wiki/CSS" target="_blank" class="btn">read more</a>
+          </div>
+
+          <div class="box">
+            <img src="image/icon-4.png" alt="">
+            <h3>SASS</h3>
+            <p>Sass (Syntactically Awesome Stylesheets) es un lenguaje de hoja de estilos en cascada inicialmente
+              diseñado
+              por Hampton Catlin y desarrollado por Natalie Weizenbaum.</p>
+            <a href="https://es.wikipedia.org/wiki/Sass" target="_blank" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <h1 class="heading">Himno y video tutorial de nuestro blog</h1>
+
+        <div class="box-container">
+
+          <div class="box">
+            <img src="image/speaker.png" alt="">
+            <h3>Audio</h3>
+            <p>Himno de nuestro blog</p>
+            <audio controls style="width: 250px;">
+              <source src="./img/cancion.mp3" type="audio/mpeg">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </div>
+          <div class="box">
+            <img src="image/video.png" alt="">
+            <h3>Video proxima tecnologia de la que hablaremos</h3>
+            <video controls width="250">
+              <source src="./img/video.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Barra Lateral y Artículos -->
-    <div class="fixed-direction">
-      <!-- Barra Lateral -->
-      <aside id="lateral">
-        <!-- Secciones de la barra lateral aquí -->
-      </aside>
-
-      <!-- Artículos -->
-      <section id="articles">
-        <h2>Últimos Artículos</h2>
-        <!-- Artículo de ejemplo -->
-        <article>
-          <div class="datos">
-            <span>Fecha: 01 de enero</span>
-            <span>Categoría: Categoría</span>
-          </div>
-          <h4>
-            <a href="#">Título del Artículo</a>
-          </h4>
-          <p>Contenido del artículo...</p>
-        </article>
-        <!-- Agrega más artículos según sea necesario -->
-      </section>
     </div>
-  </main>
 
-  <!-- Pie de Página -->
-  <footer id="footer">
-    <div class="wrap">
-      <!-- Contenido del pie de página aquí -->
+  </main>
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="logo">
+          <img src="./image/logo-medac.jpeg" alt="">
+        </div>
+        <div class="terms">
+          <p>Rediseñar el proyecto (ProyectoWeb2), página index.html mediante el uso de Flex
+            (actualmente diseñado mediante display: Float).
+            2. Realizar una página nueva denominada Blog.html / Proyectos.html que debe cumplir
+            los siguientes requisitos.</p>
+        </div>
+      </div>
+      <div class="box__footer">
+        <h2>Requisitos</h2>
+        <p>Diseño mediante display: Grid / Grid-Areas</p>
+        <p>Debe incorporar exclusivamente 1 o 2 elementos de Bootstrap.</p>
+        <p>Debe incorporar reproducción de elementos de audio.</p>
+        <p>Debe incorporar reproducción de elementos de vídeo (opcional)</p>
+      </div>
     </div>
   </footer>
 </body>
